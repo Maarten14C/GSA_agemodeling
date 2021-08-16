@@ -9,7 +9,10 @@ Welcome to the GSA Short Course on Age-Depth Modeling of Sedimentary Deposits. T
 
 You will need to have a recent version of [R](r-project.org) installed for your operating system, at least version 4.0. If you want, you can also install [RStudio](www.rstudio.com). Note that the version numbering differs between `R` and `Rstudio`; most important is to have at least version 4.0 of `R`.
 Install the following R packages:
-`install.packages(c('clam', 'rbacon'))`
+
+```{r}
+install.packages(c('clam', 'rbacon'))
+```
 
 
 
