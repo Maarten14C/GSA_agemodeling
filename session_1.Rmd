@@ -1,0 +1,24 @@
+---
+title: session 1
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{session 1}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+This page contains the R code that will be run in the first session of the GSA Short Course on age-modeling.
+
+To get to grips with radiocarbon's half-life of 5730 years, first let's set up a variable called `yr` that contains 10 half-lives. Then calculate how much radiocarbon is left at each of the entries:
+
+```{r}
+yr <- seq(0, by=5730, length=10)
+halflives <- .5 ^ (0:9)
+cbind(yr, halflives)
+```
+
+
+
+
+
+
